@@ -1,0 +1,25 @@
+# Quick Start
+
+....
+$ docker-compose up -d
+$ docker-compose exec db mysql -p
+Enter password: root
+mysql> USE world;
+
+AND ANY SQL ....
+
+mysql> quit
+$ docker-compose down
+....
+
+# world.sql
+
+`world.sql` is default database in MySQL;
+
+https://dev.mysql.com/doc/index-other.html
+
+# 永続化について
+
+こちらをご参照ください。
+
+https://kuzunoha-ne.hateblo.jp/entry/2019/04/26/171200
