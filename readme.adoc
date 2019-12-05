@@ -4,19 +4,25 @@
 $ docker-compose up -d
 $ docker-compose exec db mysql -p
 Enter password: root
-mysql> USE world;
+
+mysql> USE test;
+Database changed
+mysql> SELECT * FROM books;
++----+-----------------+--------+
+| ID | Name            | Number |
++----+-----------------+--------+
+|  1 | Soromon no Kagi |     30 |
+|  2 | Kuroi Medori    |     19 |
+|  3 | Nekuro Nomikon  |      2 |
++----+-----------------+--------+
+3 rows in set (0.00 sec)
 
 AND ANY SQL ....
 
 mysql> quit
+Bye
 $ docker-compose down
 ....
-
-# world.sql
-
-`world.sql` is default database in MySQL;
-
-https://dev.mysql.com/doc/index-other.html
 
 # 永続化について
 
